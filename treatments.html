@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore advanced dental treatments at Sakthi Dental Clinic including implants, braces, whitening, pediatric dentistry and more.">
+<meta name="keywords" content="Dental Treatments Hosur, Implants, Braces, Teeth Cleaning, Root Canal">
+<title>Treatments | Sakthi Dental Clinic</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ============================== */
+/* TREATMENT IMAGE GRID STYLING */
+/* ============================== */
+
+.treatment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.treatment-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.treatment-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.treatment-card:hover img {
+  transform: scale(1.1);
+}
+
+.treatment-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.treatment-overlay h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media(max-width:768px) {
+  .treatment-card img {
+    height: 180px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="container navbar">
+<h2>Sakthi Dental Clinic</h2>
+<nav class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="treatments.html">Treatments</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<h1>Explore Our Dental Services</h1>
+<p>Comprehensive solutions tailored to your needs</p>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="treatment-grid">
+
+<!-- ROW 1 -->
+
+<div class="treatment-card">
+<img src="images/Treatments/Aligner.png" alt="Clear Aligners">
+<div class="treatment-overlay"><h3>Aligners</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Artificial Complete Denture.png" alt="Artificial Complete Denture">
+<div class="treatment-overlay"><h3>Artificial Complete Denture</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Bleaching.png" alt="Teeth Bleaching">
+<div class="treatment-overlay"><h3>Bleaching</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Fixed Partial Denture.png" alt="Fixed Partial Denture">
+<div class="treatment-overlay"><h3>Fixed Partial Denture</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Flap-surgery.png" alt="Flap Surgery">
+<div class="treatment-overlay"><h3>Flap Surgery</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Impants.png" alt="Dental Implants">
+<div class="treatment-overlay"><h3>Implants</h3></div>
+</div>
+
+<!-- ROW 2 -->
+
+<div class="treatment-card">
+<img src="images/Treatments/Laser-Surgery.png" alt="Laser Surgery">
+<div class="treatment-overlay"><h3>Laser Surgery</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Orthodonic-Treatment.png" alt="Orthodontic Treatment">
+<div class="treatment-overlay"><h3>Orthodontic Treatment</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Pediatric-dentistry.png" alt="Pediatric Dentistry">
+<div class="treatment-overlay"><h3>Pediatric Dentistry</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Root Canal Treatment.png" alt="Root Canal Treatment">
+<div class="treatment-overlay"><h3>Root Canal Treatment</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Teeth Cleaning.png" alt="Teeth Cleaning">
+<div class="treatment-overlay"><h3>Teeth Cleaning</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Teeth Extraction.png" alt="Teeth Extraction">
+<div class="treatment-overlay"><h3>Teeth Extraction</h3></div>
+</div>
+
+<!-- ROW 3 -->
+
+<div class="treatment-card">
+<img src="images/Treatments/Tooth-Filling.jpg" alt="Tooth Filling">
+<div class="treatment-overlay"><h3>Tooth Filling</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Veneer Treatment.jpg" alt="Veneer Treatment">
+<div class="treatment-overlay"><h3>Veneer Treatment</h3></div>
+</div>
+
+<div class="treatment-card">
+<img src="images/Treatments/Wisdom Teeth Removal.png" alt="Wisdom Teeth Removal">
+<div class="treatment-overlay"><h3>Wisdom Teeth Removal</h3></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container footer-bottom">
+© 2026 Sakthi Dental Clinic. All rights reserved.
+</div>
+</footer>
+
+</body>
+</html>

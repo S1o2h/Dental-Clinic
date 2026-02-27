@@ -1,0 +1,333 @@
+/* ============================= */
+/* SAKTHI DENTAL CLINIC STYLES  */
+/* ============================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary: #6C63FF;
+  --accent: #FF6B9A;
+  --bg: #F9F9FF;
+  --dark: #2D2D2D;
+  --gray: #666;
+  --white: #fff;
+  --radius: 12px;
+  --shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  padding: 70px 0;
+}
+
+h1, h2, h3 {
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  color: var(--gray);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: rgb(162, 251, 28);
+}
+
+.btn-accent {
+  background: var(--accent);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+/* NAVBAR */
+
+/* ============================== */
+/* HEADER IMPROVEMENT */
+/* ============================== */
+
+header {
+  background: #f3f3f3;
+  padding: 15px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LEFT LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 70px;   /* adjust if needed */
+}
+
+/* CENTER TITLE */
+.site-title {
+  flex: 1;
+  text-align: center;
+  font-size: 2.4rem;   /* 🔥 bigger */
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* RIGHT NAV */
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+}
+
+.nav-links a:hover {
+  color: #6C63FF;
+}
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(to left, #6C63FF, #8E85FF);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: white;
+}
+
+/* CARD GRID */
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* TESTIMONIAL */
+
+.testimonial {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* CONTACT */
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-family: inherit;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #1E1E2F;
+  color: white;
+  padding: 50px 0;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+.form-status {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  display: none;
+  font-weight: 500;
+}
+
+.form-status.success {
+  background: #E6FFFA;
+  color: #047857;
+  border: 1px solid #10B981;
+  display: block;
+}
+
+.form-status.error-status {
+  background: #FFE4E6;
+  color: #B91C1C;
+  border: 1px solid #EF4444;
+  display: block;
+}
+
+button.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.hero {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(108,99,255,0.8), rgba(142,133,255,0.8));
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
