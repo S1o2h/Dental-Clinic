@@ -89,83 +89,92 @@
 <div class="container">
 <div class="treatment-grid">
 
-<!-- ROW 1 -->
-
-<div class="treatment-card">
+<!-- 1 -->
+<div class="treatment-card" onclick="openModal('aligners')">
 <img src="images/Treatments/Aligner.png" alt="Clear Aligners">
 <div class="treatment-overlay"><h3>Aligners</h3></div>
 </div>
 
-<div class="treatment-card">
+<!-- 2 -->
+<div class="treatment-card" onclick="openModal('denture')">
 <img src="images/Treatments/Artificial Complete Denture.png" alt="Artificial Complete Denture">
 <div class="treatment-overlay"><h3>Artificial Complete Denture</h3></div>
 </div>
 
-<div class="treatment-card">
-<img src="images/Treatments/Bleaching.png" alt="Teeth Bleaching">
+<!-- 3 -->
+<div class="treatment-card" onclick="openModal('bleaching')">
+<img src="images/Treatments/Bleaching.png" alt="Bleaching">
 <div class="treatment-overlay"><h3>Bleaching</h3></div>
 </div>
 
-<div class="treatment-card">
+<!-- 4 -->
+<div class="treatment-card" onclick="openModal('bridge')">
 <img src="images/Treatments/Fixed Partial Denture.png" alt="Fixed Partial Denture">
 <div class="treatment-overlay"><h3>Fixed Partial Denture</h3></div>
 </div>
 
-<div class="treatment-card">
+<!-- 5 -->
+<div class="treatment-card" onclick="openModal('flap')">
 <img src="images/Treatments/Flap-surgery.png" alt="Flap Surgery">
 <div class="treatment-overlay"><h3>Flap Surgery</h3></div>
 </div>
 
-<div class="treatment-card">
-<img src="images/Treatments/Impants.png" alt="Dental Implants">
+<!-- 6 -->
+<div class="treatment-card" onclick="openModal('implants')">
+<img src="images/Treatments/Impants.png" alt="Implants">
 <div class="treatment-overlay"><h3>Implants</h3></div>
 </div>
 
-<!-- ROW 2 -->
-
-<div class="treatment-card">
+<!-- 7 -->
+<div class="treatment-card" onclick="openModal('laser')">
 <img src="images/Treatments/Laser-Surgery.png" alt="Laser Surgery">
 <div class="treatment-overlay"><h3>Laser Surgery</h3></div>
 </div>
 
-<div class="treatment-card">
+<!-- 8 -->
+<div class="treatment-card" onclick="openModal('ortho')">
 <img src="images/Treatments/Orthodonic-Treatment.png" alt="Orthodontic Treatment">
 <div class="treatment-overlay"><h3>Orthodontic Treatment</h3></div>
 </div>
 
-<div class="treatment-card">
+<!-- 9 -->
+<div class="treatment-card" onclick="openModal('pediatric')">
 <img src="images/Treatments/Pediatric-dentistry.png" alt="Pediatric Dentistry">
 <div class="treatment-overlay"><h3>Pediatric Dentistry</h3></div>
 </div>
 
-<div class="treatment-card">
+<!-- 10 -->
+<div class="treatment-card" onclick="openModal('rct')">
 <img src="images/Treatments/Root Canal Treatment.png" alt="Root Canal Treatment">
 <div class="treatment-overlay"><h3>Root Canal Treatment</h3></div>
 </div>
 
-<div class="treatment-card">
+<!-- 11 -->
+<div class="treatment-card" onclick="openModal('cleaning')">
 <img src="images/Treatments/Teeth Cleaning.png" alt="Teeth Cleaning">
 <div class="treatment-overlay"><h3>Teeth Cleaning</h3></div>
 </div>
 
-<div class="treatment-card">
+<!-- 12 -->
+<div class="treatment-card" onclick="openModal('extraction')">
 <img src="images/Treatments/Teeth Extraction.png" alt="Teeth Extraction">
 <div class="treatment-overlay"><h3>Teeth Extraction</h3></div>
 </div>
 
-<!-- ROW 3 -->
-
-<div class="treatment-card">
+<!-- 13 -->
+<div class="treatment-card" onclick="openModal('filling')">
 <img src="images/Treatments/Tooth-Filling.jpg" alt="Tooth Filling">
 <div class="treatment-overlay"><h3>Tooth Filling</h3></div>
 </div>
 
-<div class="treatment-card">
+<!-- 14 -->
+<div class="treatment-card" onclick="openModal('veneers')">
 <img src="images/Treatments/Veneer Treatment.jpg" alt="Veneer Treatment">
 <div class="treatment-overlay"><h3>Veneer Treatment</h3></div>
 </div>
 
-<div class="treatment-card">
+<!-- 15 -->
+<div class="treatment-card" onclick="openModal('wisdom')">
 <img src="images/Treatments/Wisdom Teeth Removal.png" alt="Wisdom Teeth Removal">
 <div class="treatment-overlay"><h3>Wisdom Teeth Removal</h3></div>
 </div>
@@ -174,11 +183,215 @@
 </div>
 </section>
 
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions (FAQs)</h2>
+
+    <div class="faq-container">
+
+      <!-- FAQ ITEM -->
+      <div class="faq-item">
+        <button class="faq-question">1. Can medication completely relieve tooth pain?</button>
+        <div class="faq-answer">
+          <p>Not entirely. While medications may offer short-term relief, long-lasting relief requires identifying and treating the root cause of the pain through professional dental care.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">2. Does teeth scaling cause enamel damage, sensitivity, or gaps?</button>
+        <div class="faq-answer">
+          <p>No. Scaling safely removes plaque and tartar. It doesn’t damage enamel or create gaps. Some temporary sensitivity may occur but usually subsides as gums heal.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">3. Can fluorosis stains be removed through scaling?</button>
+        <div class="faq-answer">
+          <p>Scaling removes surface stains but not fluorosis (internal stains). Fluorosis may require bleaching, veneers, or crowns for improvement.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">4. Can painful teeth be treated with fillings?</button>
+        <div class="faq-answer">
+          <p>If decay reaches the pulp, filling won’t help. Root canal treatment or extraction may be required. Fillings work only when damage is limited to enamel and dentin.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">5. Is placing a crown necessary after RCT?</button>
+        <div class="faq-answer">
+          <p>Yes. A crown protects the treated tooth, prevents fractures, and restores chewing strength.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">6. Can milk teeth need RCT?</button>
+        <div class="faq-answer">
+          <p>Yes. If deeply decayed and expected to remain in the mouth, RCT helps preserve the tooth and prevent infection.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">7. How can I maintain good oral hygiene?</button>
+        <div class="faq-answer">
+          <p>Brush twice daily, floss regularly, rinse after meals, and schedule routine dental check-ups.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">8. What is the best age to get braces?</button>
+        <div class="faq-answer">
+          <p>Braces are most effective between ages 12–14, but earlier intervention may help depending on the condition.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">9. Do all wisdom teeth need removal?</button>
+        <div class="faq-answer">
+          <p>No. Removal is needed only if impacted, infected, or causing crowding or damage.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">10. Is it important to replace missing teeth?</button>
+        <div class="faq-answer">
+          <p>Yes. Replacing missing teeth maintains proper alignment and chewing function.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">11. What are the benefits of dental implants?</button>
+        <div class="faq-answer">
+          <p>Implants restore appearance and functionality, providing a stable and natural-looking solution.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">12. Which toothbrush and toothpaste should I use?</button>
+        <div class="faq-answer">
+          <p>Use a soft/medium brush with fluoride toothpaste. Replace every 3 months.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">13. What causes tooth sensitivity?</button>
+        <div class="faq-answer">
+          <p>Sensitivity may result from enamel wear, decay, exposed roots, or cracks.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">14. How often should I see a dentist?</button>
+        <div class="faq-answer">
+          <p>Every six months for routine check-ups and preventive care.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <footer>
 <div class="container footer-bottom">
 © 2026 Sakthi Dental Clinic. All rights reserved.
 </div>
 </footer>
+
+<script>
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  const question = item.querySelector(".faq-question");
+  question.addEventListener("click", () => {
+    item.classList.toggle("active");
+  });
+});
+</script>
+
+<!-- TREATMENT MODAL -->
+<div id="treatmentModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+<script>
+const treatments = {
+aligners: {
+title: "Aligners",
+desc: "A discreet, removable alternative to traditional braces that gradually shifts teeth into alignment for a comfortable experience."
+},
+denture: {
+title: "Artificial Complete Denture",
+desc: "Customized, durable dentures designed to restore full-arch functionality and aesthetics for a confident smile."
+},
+bleaching: {
+title: "Bleaching",
+desc: "Professional-grade treatment using safe bleaching agents to remove deep stains and brighten your smile."
+},
+bridge: {
+title: "Fixed Partial Denture",
+desc: "Custom bridges that anchor to adjacent teeth or implants to securely replace missing teeth."
+},
+flap: {
+title: "Flap Surgery",
+desc: "An advanced procedure that cleans deep-seated bacteria beneath the gums to treat severe gum disease."
+},
+implants: {
+title: "Dental Implants",
+desc: "Biocompatible titanium roots that provide a stable, long-lasting foundation for replacing missing teeth."
+},
+laser: {
+title: "Laser Surgery",
+desc: "Minimally invasive laser technology for gum care and soft tissue surgeries with faster healing."
+},
+ortho: {
+title: "Orthodontic Treatment",
+desc: "Customized metal, ceramic, or lingual braces to correct tooth alignment and improve bite function."
+},
+pediatric: {
+title: "Pediatric Dentistry",
+desc: "Gentle dental care tailored for children to build healthy oral habits for life."
+},
+rct: {
+title: "Root Canal Treatment",
+desc: "Removal of deep infection within the tooth to relieve pain and preserve natural structure."
+},
+cleaning: {
+title: "Teeth Cleaning",
+desc: "Advanced laser-assisted cleaning and scaling to remove plaque and restore gum health."
+},
+extraction: {
+title: "Teeth Extraction",
+desc: "Gentle, stress-free tooth removal with modern techniques for smooth recovery."
+},
+filling: {
+title: "Tooth Filling",
+desc: "High-quality restorations that seal cavities and preserve natural tooth structure."
+},
+veneers: {
+title: "Veneer Treatment",
+desc: "Thin, custom-made shells that correct cosmetic imperfections for a flawless smile."
+},
+wisdom: {
+title: "Wisdom Teeth Removal",
+desc: "Safe and gentle removal of impacted wisdom teeth using modern anesthesia."
+}
+};
+
+function openModal(type) {
+document.getElementById("modalTitle").innerText = treatments[type].title;
+document.getElementById("modalDescription").innerText = treatments[type].desc;
+document.getElementById("treatmentModal").style.display = "flex";
+}
+
+function closeModal() {
+document.getElementById("treatmentModal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
